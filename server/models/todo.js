@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var Todo = mongoose.model('Todo', {
-    name: {
+    text: {
         type: String,
         trim: true,
         minLength: 1,
