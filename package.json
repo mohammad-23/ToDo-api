@@ -7,8 +7,9 @@
     "start": "node server/server.js"  
     "test": "mocha server/**/*.test.js",
     "test-watch": "nodemon --exec \"npm test\"" 
-  },
-    "engines": "8.9.4"
+  },"engines":{
+        "node": "8.9.4"   
+    },
   "author": "",
   "license": "ISC",
   "dependencies": {
