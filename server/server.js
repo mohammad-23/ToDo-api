@@ -11,7 +11,7 @@ var {User} = require('./models/user');
 var {authenticate} = require('./middleware/authenticate');
 
 var app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
@@ -162,7 +162,7 @@ app.delete('/users/me/token', authenticate, (req, res) => {
    }); 
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Started on port 3000');
 });
 
